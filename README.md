@@ -3,7 +3,7 @@ Finding Lane Lines on the Road
 The libraries used in this project are the following:       
     open cv,    
     numpy,  
-    matplotlib, 
+    matplotlib,         
     moviepy 
     
 The pipelining of this project are the following:       
@@ -15,18 +15,18 @@ Reflection
   1. Discription about my pipeline.     
     Assuming that the camera has a fixed mount on the car so the angle and shape of the road lines remain same untill and unless the lines itself starts to change shape / orientation      
     My pipeline consisted of 5 steps.   
-      (i) Convert the images to grayscale and then perforn canny edge detection on it.  
+      1. Convert the images to grayscale and then perforn canny edge detection on it.  
           as the image is greyscale the there will be a drop in the color gradient on the boundry/edges of road lines (white/yellow) which would be easily detectable and 
           hence markable    
-      (ii) On this image we now perform region selection (or masking).  
+      2. On this image we now perform region selection (or masking).  
             The entire region outside the defined polygon (here: trapezium) will be masked witha monotonic color.   
-      (iii) On his masked edge detected image we perform hough transformation   
+      3. On his masked edge detected image we perform hough transformation   
             After after the edge detection all pixels in our region of interest and above color threshold are lines in hough space. The interection point of these lines  
             will be a road line in normal cartesian space.  
-      (iv) Extrapolation of lines   
+      4. Extrapolation of lines   
            From the above algo we get lines, multiple short lines, To get a single long line we take the average of all lines we get and find the average slope and average
            y intersection. Now we have both m and c for an eqn of a sl -> y = m*x + c.
-      (v) imposing of images    
+      5. Imposing of images    
           After we got the lines we draw them by modifying a null matrix of same dimensions as of origonial image and then instead of concatinating the images we perform
           weighted addition, first to get a single matrix for both the lines and then the lines with origonal image with bias 0.
         
