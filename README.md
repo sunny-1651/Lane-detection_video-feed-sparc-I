@@ -1,12 +1,12 @@
 Finding Lane Lines on the Road
 
-The libraries used in this project are the following:
+The libraries used in this project are the following:       
     open cv,    
     numpy,  
     matplotlib, 
     moviepy 
     
-The pipelining of this project are the following:
+The pipelining of this project are the following:       
     Selecting the region of interest (colour selection)     
     Canny edge - detection  
     hough transform 
