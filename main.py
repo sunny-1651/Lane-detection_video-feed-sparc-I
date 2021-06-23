@@ -70,7 +70,7 @@ def process(image):
 # plt.imshow(process(image))
 # plt.show()
 
-white_output = "test_videos_output/solidWhiteRight2.mp4"
+white_output = "test_videos_output/solidWhiteRight.mp4"
 clip1 = VideoFileClip("test_videos/solidWhiteRight.mp4")
 white_clip = clip1.fl_image(process)
 white_clip.write_videofile(white_output, audio=False)
