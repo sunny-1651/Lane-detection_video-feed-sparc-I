@@ -1,9 +1,9 @@
 Finding Lane Lines on the Road
 
 The libraries used in this project are the following:
-    open cv
-    numpy
-    matplotlib
+    open cv,
+    numpy,
+    matplotlib,
     moviepy
 
 The pipelining of this project are the following:
