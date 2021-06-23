@@ -43,4 +43,4 @@ Reflection
       Something like object detection and radius of curvature to form a curved line would improve the algorithm a lot.
       
       
-To see the examples of how does the result turn please see the photos and videos in the (folders named accordingly)
+To see the examples of how did the result turn out, please see the photos and videos (in the folders named accordingly)
